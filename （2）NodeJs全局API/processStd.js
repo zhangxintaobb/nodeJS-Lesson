@@ -1,0 +1,29 @@
+//接受用户输入信息
+var message={
+    Name:"",
+    Emall:"",
+    QQ:"",
+    Mobile:""
+};
+var i=0;
+console.log("Name:");
+process.stdin.on("data",function(data){
+            if(i==0){
+                message.Name=data.toString();
+                console.log("Emall:");
+            }
+            if(i==1){
+                message.Emall=data.toString();
+                console.log("QQ:");
+            }
+            if(i==2){
+                message.QQ=data.toString();
+                console.log("Mobile:");
+            }
+            if(i==3){
+                message.Mobile=data.toString();
+                console.log(message);
+                process.exit();
+            }
+            i++;
+})
