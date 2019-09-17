@@ -1,5 +1,4 @@
 
-
 function circleFun(r){
     var area=function(r){
         return r*r*Math.PI;

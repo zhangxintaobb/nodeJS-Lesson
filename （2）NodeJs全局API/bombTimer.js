@@ -2,6 +2,7 @@
 function Bomb(){
     this.message="bomb!!!",
     this.explode=function(){
+
         console.log(this.message);
     }
 }
